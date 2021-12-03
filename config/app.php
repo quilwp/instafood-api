@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Flugg\Responder\ResponderServiceProvider::class,
         /*
          * Application Service Providers...
          */
