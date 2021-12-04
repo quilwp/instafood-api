@@ -15,10 +15,10 @@ class IngredientSeeder extends Seeder
             'name' => 'Apple'
         ],
         [
-            'name' => 'Banana'
+            'name' => 'Banana',
         ],
         [
-            'name' => 'Orange'
+            'name' => 'Orange',
         ]
     ];
 
