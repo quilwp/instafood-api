@@ -39,7 +39,7 @@ class IngredientController extends Controller
      * @param int $ingredientId
      * @return JsonResponse
      */
-    public function destroy(int $recipeId, int $ingredientId)
+    public function destroy(int $recipeId, int $ingredientId): JsonResponse
     {
         Recipe::findOrFail($recipeId)->ingredients()->detach($ingredientId);
 
