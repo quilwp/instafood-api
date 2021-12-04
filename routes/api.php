@@ -19,5 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::group(['prefix' => 'admin'], function () {
-    Route::resource('ingredients', App\Http\Controllers\Admin\Ingredient\IngredientController::class);
+    Route::resource('ingredients', \App\Http\Controllers\Admin\Ingredient\IngredientController::class);
+    Route::resource('recipes', \App\Http\Controllers\Admin\Recipe\RecipeController::class);
+    Route::resource('recipes.ingredients', \App\Http\Controllers\Admin\Recipe\Ingredient\IngredientController::class);
 });
